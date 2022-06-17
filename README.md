@@ -6,6 +6,19 @@ Automated detection of fraudulent behavior can be done in various ways including
 
 **Details:** BankSim is an agent-based simulator of bank payments based on a sample of aggregated transactional data provided by a bank in Spain. The main purpose of BankSim is the generation of synthetic data that can be used for fraud detection research. Statistical and a Social Network Analysis (SNA) of relations between merchants and customers were used. BankSim was ran for 180 steps (approx. six months), several times and calibrated the parameters in order to obtain a distribution that get close enough to be reliable for testing. Then several log files were collected and the most accurate ones were selected. Thieves were injected that aim to steal an average of three cards per step and perform about two fraudulent transactions per day. 594643 records were produced in total where 587443 are normal payments and 7200 fraudulent transactions. Since this is a randomised simulation the values are of course not identical to original data. (Real data can not be used as that is violation of customer privacy)
 
+Banksim dataset
+We detect the fraudulent transactions from the Banksim dataset. This synthetically generated dataset consists of payments from various customers made in different time periods and with different amounts. F
+
+Here what we'll do in this kernel:
+
+<br />Exploratory Data Analysis (EDA)
+<br />Data Preprocessing
+<br />Oversampling with SMOTE
+<br />K-Neighbours Classifier
+<br />Random Forest Classifier
+<br />XGBoost Classifier
+<br />Conclusion
+
 We plan on answering the following:
 
 <br />Does gender have anything to do with being a target for fraud?
